@@ -35,7 +35,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #ffc800;
-  --bs-secondary: #6c757d;
+  --bs-secondary: #191c1d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc800;
@@ -8091,7 +8091,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #013220 !important;
 }
 
 .text-black-50 {
@@ -10844,6 +10844,7 @@ p {
   font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
+  font-family: 'Abril Fatface', cursive;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
   font-size: 1rem;
