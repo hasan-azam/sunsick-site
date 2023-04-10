@@ -307,6 +307,7 @@ figure {
 img,
 svg {
   vertical-align: middle;
+  text-align: center;
 }
 
 table {
@@ -641,6 +642,21 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
+
+.container-pic {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  max-width: 100%;
+  max-height: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("../assets/img/shirt-bois-final.png");
+
+}
+
 
 @media (min-width: 576px) {
   .container-sm, .container {
@@ -2845,12 +2861,12 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #ffc800;
-  --bs-btn-border-color: #ffc800;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #d9aa00;
-  --bs-btn-hover-border-color: #cca000;
+  --bs-btn-color: #393126;
+  --bs-btn-bg: #feb10a;
+  --bs-btn-border-color: #feb10a;
+  --bs-btn-hover-color: #e84413;
+  --bs-btn-hover-bg: #feb10a;
+  --bs-btn-hover-border-color: #feb10a;
   --bs-btn-focus-shadow-rgb: 255, 208, 38;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #cca000;
@@ -7995,6 +8011,20 @@ textarea.form-control-lg {
   text-align: center !important;
 }
 
+.picture-placement {
+  height: 40vh;
+  width: 80vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/shirt-bois-final.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: contain;
+}
+
 .text-decoration-none {
   text-decoration: none !important;
 }
@@ -10838,7 +10868,9 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  /*padding: 6rem 0;*/
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
