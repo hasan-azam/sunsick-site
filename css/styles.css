@@ -213,6 +213,7 @@ dd {
 
 blockquote {
   margin: 0 0 1rem;
+  text-align: center;
 }
 
 b,
@@ -656,7 +657,17 @@ progress {
   background-image: url("../assets/img/shirt-bois-final.png");
 
 }
-
+header.image-insert {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../assets/img/bois-with-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
 
 @media (min-width: 576px) {
   .container-sm, .container {
