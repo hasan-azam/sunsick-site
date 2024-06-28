@@ -10988,16 +10988,36 @@ p {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
+  padding-top: 50rem; /* Adjusted for better initial responsiveness */
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/flower-bg.jpg");
+  background-image: url("../assets/img/flower-bg-4.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  header.masthead {
+    padding-top: 30rem; /* Reduced padding for smaller screens */
+    padding-bottom: 4rem;
+  }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+  header.masthead {
+    padding-top: 20rem; /* Further reduced padding for very small screens */
+    padding-bottom: 3rem;
+  }
+}
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
