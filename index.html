@@ -48,17 +48,36 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <video autoplay muted loop id="background-video">
-              <source src="assets\video\website-flower-animation.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <div class="content">
-              <!-- Your header content goes here -->
-            </div>
-          </header>
-          
+<!-- Masthead-->
+<header class="masthead">
+    <video autoplay muted loop playsinline id="background-video">
+        <source src="assets/video/website-flower-animation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="content">
+        <!-- Your header content goes here -->
+    </div>
+</header>
+
+<!-- Merch, Shows, Tunes, Pics sections go here -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const video = document.getElementById('background-video');
+        if (video) {
+            video.muted = true;
+            video.play().catch(error => {
+                console.error('Autoplay was prevented:', error);
+                video.setAttribute('controls', 'controls');
+            });
+
+            // Remove controls if they are added due to user interaction
+            video.addEventListener('playing', () => {
+                video.removeAttribute('controls');
+            });
+        }
+    });
+</script>
 
  <!-- Merch-->
         <section class="page-section" id="merch">

@@ -11021,7 +11021,7 @@ header.masthead .content {
 @media (max-width: 768px) {
   header.masthead {
     height: 100vh; /* Adjust the height for smaller screens */
-    padding-top: 27rem
+    padding-top: 33rem
    /* width:100vw;*/
   }
 
