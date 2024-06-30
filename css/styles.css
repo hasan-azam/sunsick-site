@@ -10923,7 +10923,7 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #3a3125;
+  background-color: #1d71d1;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -10940,7 +10940,7 @@ p {
   text-transform: uppercase;
 }
 #mainNav .navbar-brand img {
-  height: 1.5rem;
+  height: 2.5rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10971,14 +10971,14 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #3a3125;
+    background-color: #1d71d1;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
   }
   #mainNav.navbar-shrink .navbar-brand svg,
   #mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
+    height: 2.5rem;
   }
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
@@ -10988,24 +10988,43 @@ p {
   }
 }
 header.masthead {
-  padding-top: 50rem; /* Adjusted for better initial responsiveness */
-  padding-bottom: 6rem;
+  position: relative;
+  overflow: hidden;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/flower-bg-4.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-  max-width: 100%;
+  width: 100%; /* Adjust the width of the container */
+  height: 100vh; /* Adjust the height of the container */
   display: block;
-  height: auto;
+  max-width: 100%;
+}
+
+header.masthead video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensure the video is behind the content */
+}
+
+header.masthead .content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the video */
+  padding-top: 10rem; /* Adjust as needed */
+  padding-bottom: 6rem;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   header.masthead {
-    padding-top: 30rem; /* Reduced padding for smaller screens */
+    height: 100vh; /* Adjust the height for smaller screens */
+    width:100vw;
+  }
+
+  header.masthead .content {
+    padding-top: 5rem; /* Adjust padding for smaller screens */
     padding-bottom: 4rem;
   }
 }
@@ -11013,44 +11032,15 @@ header.masthead {
 /* Media query for very small screens */
 @media (max-width: 480px) {
   header.masthead {
-    padding-top: 20rem; /* Further reduced padding for very small screens */
+    height: 30vh; /* Adjust the height for very small screens */
+  }
+
+  header.masthead .content {
+    padding-top: 3rem; /* Adjust padding for very small screens */
     padding-bottom: 3rem;
   }
 }
 
-header.masthead .masthead-subheading {
-  font-size: 1.5rem;
-  font-style: italic;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-header.masthead .masthead-heading {
-  font-size: 3.25rem;
-  font-weight: 700;
-  line-height: 3.25rem;
-  margin-bottom: 2rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-@media (min-width: 768px) {
-  header.masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
-  }
-  header.masthead .masthead-subheading {
-    font-size: 2.25rem;
-    font-style: italic;
-    line-height: 2.25rem;
-    margin-bottom: 2rem;
-  }
-  header.masthead .masthead-heading {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 4.5rem;
-    margin-bottom: 4rem;
-  }
-}
 #portfolio .portfolio-item {
   max-width: 26rem;
   margin-left: auto;
