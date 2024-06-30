@@ -10996,6 +10996,7 @@ header.masthead {
   height: 100vh; /* Adjust the height of the container */
   display: block;
   max-width: 100%;
+  
 }
 
 header.masthead video {
@@ -11012,7 +11013,7 @@ header.masthead video {
 header.masthead .content {
   position: relative;
   z-index: 1; /* Ensure content is above the video */
-  padding-top: 10rem; /* Adjust as needed */
+  padding-top: 50rem; /* Adjust as needed */
   padding-bottom: 6rem;
 }
 
@@ -11020,6 +11021,7 @@ header.masthead .content {
 @media (max-width: 768px) {
   header.masthead {
     height: 100vh; /* Adjust the height for smaller screens */
+    padding-top: 27rem
    /* width:100vw;*/
   }
 
