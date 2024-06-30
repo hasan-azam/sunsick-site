@@ -11020,7 +11020,7 @@ header.masthead .content {
 @media (max-width: 768px) {
   header.masthead {
     height: 100vh; /* Adjust the height for smaller screens */
-    width:100vw;
+   /* width:100vw;*/
   }
 
   header.masthead .content {
